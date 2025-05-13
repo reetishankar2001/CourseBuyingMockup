@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="PaymentForm.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="form-container">
+        <form action="#" method="POST" class="payment-form">
+            <h2>Payment Details</h2>
+            
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter Name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+
+            <label for="phone">Phone (WhatsApp enabled)</label>
+            <div class="phone-container">
+                <select id="country-code">
+                    <option value="+91">+91</option>
+                    <!-- Add more country codes if needed -->
+                </select>
+                <input type="tel" id="phone" name="phone" placeholder="Enter Phone" required>
+            </div>
+
+            <label for="state">Enter State</label>
+            <select id="state" name="state">
+                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                <option value="Bihar">Bihar</option>
+                <option value="West Bengal">West Bengal</option>
+                <option value="New Delhi">New Delhi/option>
+                <option value="Karnataka">Karnataka</option>
+            </select>
+
+            <label for="coupon">Coupon Code</label>
+            <div class="coupon-container">
+                <input type="text" id="coupon" name="coupon" placeholder="Enter Coupon Code">
+                <button type="button" class="apply-btn">Apply</button>
+            </div>
+
+            <div class="gst-container">
+                <input type="checkbox" id="gst" name="gst">
+                <label for="gst">Add GST details (optional)</label>
+            </div>
+
+            <div class="price-container">
+                <p>Original Price - <span>₹1,999.00</span></p>
+                <br>
+                <hr/>
+                <br/>
+                <p>Total -  <strong>₹1,999.00</strong></p>
+            </div>
+
+            <button type="submit" class="pay-btn">Pay ₹1,999.00</button>
+        </form>
+    </div>
+
+    <div class="info-container">
+        <h2> Plan | How to Tell Your Story</h2>
+        <img src="./bg.jpg" alt="Story Plan">
+        <p><strong>YOUR story is your X factor.</strong></p>
+        <p>When we started Humans of Bombay, we had no idea that this “page” would become a storytelling powerhouse...</p>
+    </div>
+</div>
+
+</body>
+</html>

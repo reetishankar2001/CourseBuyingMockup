@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    font-family: 'Trebuchet MS', sans-serif;
+      /* background-image: url("./bg.jpg"); */
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+header {
+    padding: 20px 10px;
+}
+
+.navbar h1 {
+    color: #fff;
+    font-size: 24px;
+    height: 10px;
+    width: 10px;
+    display: inline-block;
+    vertical-align:middle ;
+    margin-right: 90vw;
+}
+.navbar h1 img{
+    height: 50px;
+    width: 100px;
+}
+
+
+nav {
+    display: inline-block;
+    float:right;
+}
+
+nav a {
+    color: #fff;
+    margin-left: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+}
+
+nav a.btn {
+    background-color: #8c46bf;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #000;
+}
+
+.offerings {
+    text-align: center;
+    padding: 30px;
+
+}
+
+.offerings h1 {
+    font-size: 2rem;
+    color: #8c46bf;
+    margin-bottom: 20px;
+}
+
+.plans {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.plan {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.plan h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.plan h3 {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    color: #8c46bf;
+}
+
+.plan ul {
+    list-style: none;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.plan ul li.unavailable {
+    color: #777;
+    text-decoration: line-through;
+}
+
+button {
+    background-color: #8c46bf;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: black;
+    background-color: #c899ec;
+}
+
+/* Premium Plan Styles */
+.premium {
+    position: relative;
+}
+
+.best-selling {
+    background-color: #8c46bf;
+    color: black;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* Highlight the selected plan with a yellow border */
+.selected {
+    border: 2px solid #8c46bf;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+      padding: 10px 5px;
+    }
+    .navbar,
+    nav a {
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-size: 12px;
+      display: inline-block;
+    }
+    .navbar h1 img {
+      height: 30px;
+      width: 50px;
+    }
+    nav a.btn {
+      padding: 3px 6px;
+    }
+  
+  }
+@media (max-width: 368px) {
+    body {
+        padding: 1px; /* Reduce padding for mobile */
+    }
+
+    .plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plan {
+        width: 100%;
+        max-width: 350px;
+        margin-bottom: 20px; /* Ensure space between stacked plans */
+    }
+
+    .best-selling {
+        top: 10px; /* Adjust position of "BEST SELLING" for mobile view */
+    }
+}
